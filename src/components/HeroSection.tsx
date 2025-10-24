@@ -19,7 +19,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-          <span className="bg-gradient-to-r from-white via-white to-gray-200 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-amber-200 via-orange-300 to-amber-100 bg-clip-text text-transparent">
             Confiança, Elegância
           </span>
           <span className="block text-primary mt-2">e Precisão</span>
@@ -27,11 +27,11 @@ const HeroSection = () => {
         
         <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl text-primary font-bold mb-4 max-w-2xl mx-auto">
           Nárnia Barbearia
         </p>
         
-        <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+        <p className="text-base md:text-lg text-white mb-8 max-w-2xl mx-auto">
           Mais que um corte, uma experiência. Venha descobrir o melhor cuidado masculino em um ambiente exclusivo e acolhedor.
         </p>
 

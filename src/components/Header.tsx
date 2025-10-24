@@ -32,7 +32,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Nárnia Barbearia" className="h-12 w-auto brightness-0 invert" />
+            <img src={logo} alt="Nárnia Barbearia" className="h-16 w-auto brightness-0 invert" />
           </div>
 
           {/* Desktop Menu */}
@@ -41,7 +41,7 @@ const Header = () => {
               <li key={item}>
                 <button
                   onClick={() => scrollToSection(item)}
-                  className="text-foreground hover:text-primary transition-colors font-medium text-sm uppercase tracking-wider"
+                  className="text-white hover:text-primary transition-colors font-medium text-sm uppercase tracking-wider"
                 >
                   {item === "inicio" ? "Início" : item === "sobre" ? "Sobre" : item === "localizacao" ? "Localização" : "Agendamento"}
                 </button>
@@ -58,7 +58,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
