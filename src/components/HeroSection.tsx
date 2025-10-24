@@ -14,12 +14,14 @@ const HeroSection = () => {
           alt="Interior da Nárnia Barbearia"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/30 via-secondary/20 to-transparent"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in">
-          Confiança, Elegância
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <span className="bg-gradient-to-r from-white via-white to-gray-200 bg-clip-text text-transparent">
+            Confiança, Elegância
+          </span>
           <span className="block text-primary mt-2">e Precisão</span>
         </h1>
         

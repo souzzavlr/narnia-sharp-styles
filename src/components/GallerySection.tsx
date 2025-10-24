@@ -1,13 +1,7 @@
 import haircutSample from "@/assets/haircut-sample.png";
+import barbershopVideo from "@/assets/barbershop-video.mp4";
 
 const GallerySection = () => {
-  // Simulando galeria com a imagem disponível + placeholders para demonstração
-  const works = [
-    { id: 1, image: haircutSample, title: "Corte Degradê Premium" },
-    { id: 2, image: haircutSample, title: "Barba & Cabelo Completo" },
-    { id: 3, image: haircutSample, title: "Corte Social Moderno" },
-    { id: 4, image: haircutSample, title: "Estilo Clássico" },
-  ];
 
   return (
     <section className="py-20 bg-secondary">
@@ -22,27 +16,34 @@ const GallerySection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {works.map((work, index) => (
-            <div
-              key={work.id}
-              className="group relative overflow-hidden rounded-xl shadow-soft hover:shadow-orange transition-all duration-300 transform hover:-translate-y-2"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={work.image}
-                  alt={work.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-foreground">{work.title}</h3>
-                </div>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="group relative overflow-hidden rounded-xl shadow-soft hover:shadow-orange transition-all duration-300 transform hover:-translate-y-2">
+            <div className="aspect-square overflow-hidden">
+              <img
+                src={haircutSample}
+                alt="Corte Degradê Premium"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-xl font-bold text-foreground">Corte Degradê Premium</h3>
               </div>
             </div>
-          ))}
+          </div>
+
+          <div className="group relative overflow-hidden rounded-xl shadow-soft hover:shadow-orange transition-all duration-300 transform hover:-translate-y-2">
+            <div className="aspect-square overflow-hidden">
+              <video
+                src={barbershopVideo}
+                className="w-full h-full object-cover"
+                controls
+                loop
+                muted
+                playsInline
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
