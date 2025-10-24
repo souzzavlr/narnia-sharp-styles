@@ -14,7 +14,7 @@ const HeroSection = () => {
           alt="Interior da Nárnia Barbearia"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/30 via-secondary/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
