@@ -7,8 +7,8 @@ const GallerySection = () => {
     <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Nossos <span className="text-primary">Trabalhos</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            Nossos Trabalhos
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
